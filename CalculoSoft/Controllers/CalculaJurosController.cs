@@ -21,8 +21,9 @@ namespace CalculoSoft.Controllers
         [HttpGet("[action]")]
         public async Task<double> CalculaJuros(double valorinicial, double meses)
         {
+            string url = HttpContext.Request.Host.ToString();
             //retorna calculo Valor Inicial * (1 + juros)^tempo
-            return await SoftRule.RetornaCalculo(valorinicial, meses);
+            return await SoftRule.RetornaCalculo(valorinicial, meses,url);
         }
         /// <summary>
         /// Retorna HTML para clicar e redirecionar para o GIT

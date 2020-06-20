@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -8,13 +9,11 @@ namespace CalculoSoft.Communs
 {    
     public static class SoftRest
     {
-        public static async Task<double> Get()
+        public static async Task<double> Get(string url)
         {
             using (var client = new HttpClient())
-            {
-                // executando no visual studio http://localhost:64071/taxajuros
-                //executando no docker http://192.168.99.100:5001/taxajuros
-                var result =  await client.GetAsync("http://localhost:64071/taxajuros");
+            {   
+                var result =  await client.GetAsync("https://"+url+"/taxajuros");
                 if (result.IsSuccessStatusCode)
                 {
                     //Executando local 

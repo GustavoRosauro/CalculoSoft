@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CalculoSoft.Controllers
 {
-    [Route("[controller]")]
+    [Route("")]
     [ApiController]
     public class CalculaJurosController : ControllerBase
     {
@@ -18,7 +18,7 @@ namespace CalculoSoft.Controllers
         /// <param name="valorinicial"></param>
         /// <param name="meses"></param>
         /// <returns></returns>
-        [HttpGet]
+        [HttpGet("[action]")]
         public async Task<double> CalculaJuros(double valorinicial, double meses)
         {
             //retorna calculo Valor Inicial * (1 + juros)^tempo
@@ -29,13 +29,13 @@ namespace CalculoSoft.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("[action]")]
-        public ContentResult RetornaUrl()
+        public ContentResult ShowmeTheCode()
         {
             return new ContentResult
             {
                 ContentType = "text/html",
                 StatusCode = (int)System.Net.HttpStatusCode.OK,
-                Content = "<html><body><h1><a href='https://github.com/GustavoRosauro/CalculoSoft/tree/master/CalculoSoft'>Clique aqui para ir para o git</a></h1></body></html>"
+                Content = "<html><body><h1><a href='https://github.com/GustavoRosauro/CalculoSoft/'>GIT HUB</a></h1><h1><a href='https://hub.docker.com/repository/docker/gustavorosauro/calculosoft'>Docker CalculoSoft</a></h1><h1><a href='https://hub.docker.com/repository/docker/gustavorosauro/taxasoft'>Docker TaxaSoft</a></h1></body></html>"
             };
         }
     }

@@ -1,0 +1,9 @@
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+
+LABEL version="1.0" maintainer="TaxaSoft"
+
+workdir /app
+
+copy ./bin/Debug/netcoreapp3.1/publish .
+
+entrypoint ["dotnet","TaxaSoft.dll"]

@@ -21,7 +21,8 @@ namespace CalculoSoft.Communs
                 taxa = await SoftRest.Get();
             }
             //devolve o caulo arredondando para duas casas decimais
-            return Math.Round(vlrIni * Math.Pow((1 + taxa),meses),2); 
+            string calculo =  (vlrIni * Math.Pow((1 + taxa),meses)).ToString("0.00");
+            return Convert.ToDouble(calculo);
         }
     }
 }

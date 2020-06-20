@@ -12,7 +12,8 @@ namespace CalculoSoft.Communs
         public static async Task<double> Get(string url)
         {
             using (var client = new HttpClient())
-            {   
+            {   //https:localhost
+                //http:docker
                 var result =  await client.GetAsync("https://"+url+"/taxajuros");
                 if (result.IsSuccessStatusCode)
                 {

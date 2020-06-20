@@ -36,7 +36,7 @@ namespace CalculoSoft.Controllers
             {
                 ContentType = "text/html",
                 StatusCode = (int)System.Net.HttpStatusCode.OK,
-                Content = "<html><body><h1><a href='https://github.com/GustavoRosauro/CalculoSoft/'>GIT HUB</a></h1><h1><a href='https://hub.docker.com/repository/docker/gustavorosauro/calculosoft'>Docker CalculoSoft</a></h1><h1><a href='https://hub.docker.com/repository/docker/gustavorosauro/taxasoft'>Docker TaxaSoft</a></h1></body></html>"
+                Content = "<html><body><h1><a href='https://github.com/GustavoRosauro/CalculoSoft/'>GIT HUB</a></h1><h1><a href='https://hub.docker.com/repository/docker/gustavorosauro/calculosoft'>Docker CalculoSoft</a></h1></body></html>"
             };
         }
     }

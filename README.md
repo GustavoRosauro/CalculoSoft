@@ -1,4 +1,4 @@
-# Calculadora de Juros SoftTesk
+# Api de Juros SoftTax
 # Autor: Gustavo Rosauro
 
 Observação quando for iniciar o projeto existe uma dependencia entre as APIs, por meio da url a API CalculoSoft faz uma chamada para a API TaxaSoft.

@@ -11,8 +11,8 @@ namespace TesteSoft
         [Test]
         public void ValidaCalculo()
         {
-            string calculo =  SoftRule.RetornaCalculo(100, 5,"", true, 0.01).Result;
-            Assert.AreEqual(calculo,"105,10");
+            string calculo =  SoftRule.RetornaCalculo(200, 9,"", true, 0.01).Result;
+            Assert.AreEqual(calculo,"218,73");
         }
     }
 }

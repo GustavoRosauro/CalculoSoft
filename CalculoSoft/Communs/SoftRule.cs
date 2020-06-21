@@ -21,6 +21,7 @@ namespace CalculoSoft.Communs
                 taxa = await SoftRest.Get(url);
             }
             //devolve o caulo truncando para duas casas decimais
+            //caso servidor docker troca , por .
             string calculo =  (vlrIni * Math.Pow((1 + taxa),meses)).ToString();
             if (calculo.Contains(','))
             {

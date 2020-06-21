@@ -17,7 +17,11 @@ namespace CalculoSoft.Communs
                 var result =  await client.GetAsync("https://"+url+"/taxajuros");
                 if (result.IsSuccessStatusCode)
                 {
-                     return Convert.ToDouble(result.Content.ReadAsStringAsync().Result.Replace(".",",")); 
+                    //Executando na máquina local
+                     return Convert.ToDouble(result.Content.ReadAsStringAsync().Result.Replace(".",","));
+                    //Executando pelo docker
+                    //return Convert.ToDouble(result.Content.ReadAsStringAsync().Result);
+                    
                 }
                 else
                 {

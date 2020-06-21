@@ -19,7 +19,7 @@ namespace CalculoSoft.Controllers
         /// <param name="meses"></param>
         /// <returns></returns>
         [HttpGet("[action]")]
-        public async Task<double> CalculaJuros(double valorinicial, int meses)
+        public async Task<string> CalculaJuros(double valorinicial, int meses)
         {
             string url = HttpContext.Request.Host.ToString();
             //retorna calculo Valor Inicial * (1 + juros)^tempo

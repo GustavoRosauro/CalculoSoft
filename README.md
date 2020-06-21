@@ -1,5 +1,5 @@
 # Api de Juros CalculoSoft
-Autor: Gustavo Rosauro &nbsp; 
-Calculosoft: Aonde se encontram as APIs &nbsp;
-IntegrationTester: Testes de Integração &nbsp;
-TesteSoft: Testes Unitários &nbsp;
+Autor: Gustavo Rosauro </br> 
+Calculosoft: Aonde se encontram as APIs  </br>
+IntegrationTester: Testes de Integração  </br>
+TesteSoft: Testes Unitários  </br>
